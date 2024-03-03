@@ -1,0 +1,131 @@
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 0
+go_gc_duration_seconds{quantile="0.25"} 0
+go_gc_duration_seconds{quantile="0.5"} 0
+go_gc_duration_seconds{quantile="0.75"} 0
+go_gc_duration_seconds{quantile="1"} 0
+go_gc_duration_seconds_sum 0
+go_gc_duration_seconds_count 0
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 10
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.21.0"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 242416
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 242416
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 4715
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 0
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 2.56368e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 242416
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 5.65248e+06
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 2.21184e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 547
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 5.65248e+06
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 7.86432e+06
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 0
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 547
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 12000
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 15600
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 67872
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 81480
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 4.194304e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 1.433613e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 524288
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 524288
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 1.2487696e+07
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 10
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 0
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0
+# HELP tmloadtest_coordinator_overall_tx_rate The overall transaction throughput rate as seen by the tm-load-test coordinator since the beginning of the load test
+# TYPE tmloadtest_coordinator_overall_tx_rate gauge
+tmloadtest_coordinator_overall_tx_rate 1499.936174590904
+# HELP tmloadtest_coordinator_state The current state of the tm-load-test coordinator
+# TYPE tmloadtest_coordinator_state gauge
+tmloadtest_coordinator_state 5
+# HELP tmloadtest_coordinator_test_underway The ID of the load test currently underway (-1 if none)
+# TYPE tmloadtest_coordinator_test_underway gauge
+tmloadtest_coordinator_test_underway -1
+# HELP tmloadtest_coordinator_total_bytes The total cumulative number of bytes of transactions sent by all workers
+# TYPE tmloadtest_coordinator_total_bytes gauge
+tmloadtest_coordinator_total_bytes 4.5e+06
+# HELP tmloadtest_coordinator_total_txs The total cumulative number of transactions sent by all workers
+# TYPE tmloadtest_coordinator_total_txs gauge
+tmloadtest_coordinator_total_txs 18000
+# HELP tmloadtest_coordinator_tx_data_rate The current transaction throughput rate (in bytes/sec) as seen by the tm-load-test coordinator, summed across all workers
+# TYPE tmloadtest_coordinator_tx_data_rate gauge
+tmloadtest_coordinator_tx_data_rate 500116.7354979914
+# HELP tmloadtest_coordinator_tx_rate The current transaction throughput rate (in txs/sec) as seen by the tm-load-test coordinator, summed across all workers
+# TYPE tmloadtest_coordinator_tx_rate gauge
+tmloadtest_coordinator_tx_rate 2000.4669419919653
+# HELP tmloadtest_coordinator_workers_completed The total number of workers that have completed their testing so far
+# TYPE tmloadtest_coordinator_workers_completed gauge
+tmloadtest_coordinator_workers_completed 2
+# HELP tmloadtest_worker_4b3c91208ea04e7cbb6a9f601e44b7c4_state The current state of worker 4b3c91208ea04e7cbb6a9f601e44b7c4
+# TYPE tmloadtest_worker_4b3c91208ea04e7cbb6a9f601e44b7c4_state gauge
+tmloadtest_worker_4b3c91208ea04e7cbb6a9f601e44b7c4_state 5
+# HELP tmloadtest_worker_4b3c91208ea04e7cbb6a9f601e44b7c4_total_txs The total number of transactions sent by worker 4b3c91208ea04e7cbb6a9f601e44b7c4
+# TYPE tmloadtest_worker_4b3c91208ea04e7cbb6a9f601e44b7c4_total_txs gauge
+tmloadtest_worker_4b3c91208ea04e7cbb6a9f601e44b7c4_total_txs 9000
+# HELP tmloadtest_worker_a26c413766514daa887d9234c32f9a04_state The current state of worker a26c413766514daa887d9234c32f9a04
+# TYPE tmloadtest_worker_a26c413766514daa887d9234c32f9a04_state gauge
+tmloadtest_worker_a26c413766514daa887d9234c32f9a04_state 5
+# HELP tmloadtest_worker_a26c413766514daa887d9234c32f9a04_total_txs The total number of transactions sent by worker a26c413766514daa887d9234c32f9a04
+# TYPE tmloadtest_worker_a26c413766514daa887d9234c32f9a04_total_txs gauge
+tmloadtest_worker_a26c413766514daa887d9234c32f9a04_total_txs 9000

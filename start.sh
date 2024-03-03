@@ -1,0 +1,2 @@
+go build -o ./build/tm-load-test ./cmd/tm-load-test/main.go
+./build/tm-load-test -c 1 -T 1000 -r 500 -s 100 --broadcast-tx-method async --endpoints ws://172.17.0.1:26657/websocket --stats-output result.csv
